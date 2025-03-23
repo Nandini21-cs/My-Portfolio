@@ -1,9 +1,11 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowRight, Code, Briefcase, Layout as LayoutIcon, Users, Github } from "lucide-react";
+import { ArrowRight, Code, Layout as LayoutIcon, Users, Github } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import TypedText from "@/components/TypedText";
 
 const Portfolio = () => {
   return (
@@ -16,12 +18,15 @@ const Portfolio = () => {
         <div className="container px-4 mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2 animate-slide-up">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 neon-text-pink">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
                 Hello, I'm<br/>
                 <span className="text-gradient inline-block bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
                   Nandini Shukla
                 </span>
               </h1>
+              <p className="text-lg text-foreground/80 mb-2">
+                And I'm a <TypedText phrases={["Frontend Developer", "Digital Marketer", "Web Designer"]} />
+              </p>
               <p className="text-lg text-foreground/80 mb-8 max-w-lg">
                 I create stunning digital experiences that combine beautiful design with performant code. From concept to deployment, I'll bring your vision to life.
               </p>
