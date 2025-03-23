@@ -6,7 +6,7 @@ import AuthLayout from "@/components/AuthLayout";
 import OTPInput from "@/components/OTPInput";
 import { toast } from "sonner";
 import { verifyOTP, sendVerificationEmail, loginUser } from "@/lib/auth";
-import { ArrowLeft, RefreshCw } from "lucide-react";
+import { ArrowLeft, RefreshCw, Info } from "lucide-react";
 
 const VerifyOTP = () => {
   const [email, setEmail] = useState<string>("");
@@ -14,6 +14,7 @@ const VerifyOTP = () => {
   const [isResending, setIsResending] = useState(false);
   const [countdown, setCountdown] = useState(60);
   const [canResend, setCanResend] = useState(false);
+  const [latestOTP, setLatestOTP] = useState<string | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -73,7 +74,25 @@ const VerifyOTP = () => {
     setIsResending(true);
     
     try {
+      // Save current console.log implementation
+      const originalConsoleLog = console.log;
+      
+      // Override console.log to capture the OTP
+      console.log = (...args) => {
+        originalConsoleLog(...args);
+        const logStr = args.join(" ");
+        if (logStr.includes("[DEV] Verification OTP for")) {
+          const otpMatch = logStr.match(/(\d{6})$/);
+          if (otpMatch && otpMatch[1]) {
+            setLatestOTP(otpMatch[1]);
+          }
+        }
+      };
+      
       await sendVerificationEmail(email);
+      
+      // Restore original console.log
+      console.log = originalConsoleLog;
       
       toast.success("New verification code sent");
       
@@ -147,6 +166,28 @@ const VerifyOTP = () => {
             onComplete={handleVerify}
             autoFocus
           />
+        </div>
+
+        {/* Demo-only information box */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
+          <div className="flex items-start">
+            <Info size={16} className="text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
+            <div className="text-sm text-blue-700 dark:text-blue-300">
+              <p className="font-medium mb-1">Demo Mode</p>
+              <p>
+                Since this is a demo app without real email integration, your verification code 
+                is displayed in the browser's console log and in a toast notification.
+              </p>
+              {latestOTP && (
+                <p className="mt-2">
+                  <span className="font-medium">Current code:</span>{" "}
+                  <code className="bg-blue-100 dark:bg-blue-800 px-2 py-0.5 rounded font-mono">
+                    {latestOTP}
+                  </code>
+                </p>
+              )}
+            </div>
+          </div>
         </div>
 
         <div className="text-center">

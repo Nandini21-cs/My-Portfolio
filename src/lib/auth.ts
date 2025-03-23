@@ -28,6 +28,10 @@ export const sendVerificationEmail = async (email: string): Promise<void> => {
   
   // In a real app, this would send an actual email
   console.log(`[DEV] Verification OTP for ${email}: ${otp}`);
+  toast.info(`This is a demo app. Your verification code is: ${otp}`, {
+    duration: 10000, // Show for 10 seconds
+    id: "otp-info",
+  });
   
   return Promise.resolve();
 };
