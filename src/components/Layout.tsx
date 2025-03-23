@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import PageTransition from "./PageTransition";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Github } from "lucide-react";
 
 interface LayoutProps {
   children: React.ReactNode;

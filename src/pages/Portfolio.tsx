@@ -1,9 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowRight, Code, Briefcase, Layout as LayoutIcon, Users } from "lucide-react";
+import { ArrowRight, Code, Briefcase, Layout as LayoutIcon, Users, Github } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Portfolio = () => {
   return (
@@ -17,10 +17,9 @@ const Portfolio = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2 animate-slide-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 neon-text-pink">
-                Hello, I'm a<br/>
+                Hello, I'm<br/>
                 <span className="text-gradient inline-block bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-                  Web Designer &<br/>
-                  Developer
+                  Nandini Shukla
                 </span>
               </h1>
               <p className="text-lg text-foreground/80 mb-8 max-w-lg">
@@ -33,6 +32,11 @@ const Portfolio = () => {
                 <Button asChild variant="outline" className="rounded-full">
                   <Link to="/contact">Get In Touch</Link>
                 </Button>
+                <Button asChild variant="ghost" className="rounded-full flex items-center gap-2">
+                  <a href="https://github.com/Nandini21-cs" target="_blank" rel="noopener noreferrer">
+                    <Github size={18} className="mr-1" /> GitHub
+                  </a>
+                </Button>
               </div>
             </div>
             
@@ -40,8 +44,8 @@ const Portfolio = () => {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden neon-border-pink">
                   <img 
-                    src="/placeholder.svg" 
-                    alt="Portfolio Hero" 
+                    src="/lovable-uploads/1e72e232-7285-44e9-b20d-f5e400382e19.png" 
+                    alt="Nandini Shukla" 
                     className="w-full h-auto object-cover"
                   />
                 </div>

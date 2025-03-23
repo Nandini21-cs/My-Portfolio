@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h3 className="text-lg font-bold neon-text-blue">PORTFOLIO</h3>
+            <h3 className="text-lg font-bold neon-text-blue">NANDINI SHUKLA</h3>
             <p className="text-sm text-muted-foreground mt-1">
               Web Designer | Developer | Digital Marketer
             </p>
@@ -17,10 +17,11 @@ const Footer = () => {
           
           <div className="flex space-x-4">
             <a 
-              href="#" 
+              href="https://github.com/Nandini21-cs" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/70 hover:text-neon-blue transition-colors"
+              aria-label="GitHub Profile"
             >
               <Github size={20} />
             </a>
@@ -50,7 +51,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center text-sm text-muted-foreground mt-6">
-          <p>© 2023 Portfolio. All rights reserved.</p>
+          <p>© 2023 Nandini Shukla. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-2">
             <Link to="/skills" className="hover:text-accent transition-colors">Skills</Link>
             <Link to="/projects" className="hover:text-accent transition-colors">Projects</Link>
