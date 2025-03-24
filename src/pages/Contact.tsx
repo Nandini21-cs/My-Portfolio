@@ -138,7 +138,7 @@ const Contact = () => {
           <div className="rounded-xl overflow-hidden h-[300px] w-full neon-border-blue animate-fade-in">
             <div className="relative w-full h-full overflow-hidden">
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/9f985a14-5b73-46cc-99a8-bc4718526d3f.png" 
                 alt="Thank you for visiting!" 
                 className="w-full h-full object-cover"
               />
