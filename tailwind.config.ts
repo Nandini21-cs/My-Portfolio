@@ -109,10 +109,10 @@ export default {
 				},
         'neon-pulse': {
           '0%, 100%': { 
-            textShadow: '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px var(--neon-color), 0 0 82px var(--neon-color), 0 0 92px var(--neon-color), 0 0 102px var(--neon-color), 0 0 151px var(--neon-color)'
+            textShadow: '0 0 5px #fff, 0 0 8px var(--neon-color), 0 0 12px var(--neon-color)'
           },
           '50%': { 
-            textShadow: '0 0 4px #fff, 0 0 6px #fff, 0 0 12px #fff, 0 0 22px var(--neon-color), 0 0 38px var(--neon-color), 0 0 60px var(--neon-color), 0 0 80px var(--neon-color), 0 0 90px var(--neon-color)'
+            textShadow: '0 0 3px #fff, 0 0 5px var(--neon-color), 0 0 8px var(--neon-color)'
           }
         },
         'float': {
@@ -120,8 +120,8 @@ export default {
           '50%': { transform: 'translateY(-10px)' }
         },
         'glow': {
-          '0%, 100%': { boxShadow: '0 0 5px var(--glow-color), 0 0 10px var(--glow-color)' },
-          '50%': { boxShadow: '0 0 20px var(--glow-color), 0 0 30px var(--glow-color)' }
+          '0%, 100%': { boxShadow: '0 0 3px var(--glow-color), 0 0 5px var(--glow-color)' },
+          '50%': { boxShadow: '0 0 8px var(--glow-color), 0 0 12px var(--glow-color)' }
         }
 			},
 			animation: {

@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -68,7 +67,8 @@
 
   .neon-text {
     --neon-color: theme('colors.neon.blue');
-    @apply font-bold tracking-wide animate-neon-pulse;
+    @apply font-bold tracking-wide;
+    text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-color), 0 0 15px var(--neon-color);
   }
 
   .neon-text-pink {
