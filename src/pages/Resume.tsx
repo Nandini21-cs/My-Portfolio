@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -48,27 +47,27 @@ const Resume = () => {
                       <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <h3 className="text-xl font-bold">Senior Web Developer</h3>
+                          <h3 className="text-xl font-bold">Digital Marketing</h3>
                           <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-accent/10 text-accent">
-                            2021 - Present
+                            15 NOV 2023 - 24 FEB 2024
                           </span>
                         </div>
-                        <p className="text-sm text-foreground/70 mb-4">TechForward Inc. • San Francisco, CA</p>
+                        <p className="text-sm text-foreground/70 mb-4">VanillaKart • Faridabad, Haryana</p>
                         <p className="text-foreground/80">
-                          Lead the development of web applications for enterprise clients, managing a team of 5 developers. Implemented modern technologies and best practices to improve performance and user experience.
+                          Managed digital marketing campaigns and strategies to increase brand awareness and customer engagement.
                         </p>
                         <ul className="mt-4 space-y-2">
                           <li className="flex items-start">
                             <span className="text-accent mr-2">•</span>
-                            <span className="text-sm">Led the redesign of a major e-commerce platform that increased conversion rates by 35%</span>
+                            <span className="text-sm">Implemented social media marketing strategies</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-accent mr-2">•</span>
-                            <span className="text-sm">Implemented CI/CD pipelines that reduced deployment time by 60%</span>
+                            <span className="text-sm">Managed online advertising campaigns</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-accent mr-2">•</span>
-                            <span className="text-sm">Mentored junior developers through code reviews and pair programming</span>
+                            <span className="text-sm">Analyzed marketing performance and optimized strategies</span>
                           </li>
                         </ul>
                       </CardContent>
@@ -79,58 +78,27 @@ const Resume = () => {
                       <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <h3 className="text-xl font-bold">Web Developer</h3>
+                          <h3 className="text-xl font-bold">Web Designer</h3>
                           <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-primary/10 text-primary">
-                            2018 - 2021
+                            JUNE 2023 - 10 NOV 2023
                           </span>
                         </div>
-                        <p className="text-sm text-foreground/70 mb-4">CreativeMinds Agency • Los Angeles, CA</p>
+                        <p className="text-sm text-foreground/70 mb-4">VanillaKart • Faridabad, Haryana</p>
                         <p className="text-foreground/80">
-                          Developed responsive websites and web applications for a diverse portfolio of clients in various industries. Collaborated with designers to implement pixel-perfect UI.
+                          Created responsive website designs and improved user experience for the company's web platforms.
                         </p>
                         <ul className="mt-4 space-y-2">
                           <li className="flex items-start">
                             <span className="text-primary mr-2">•</span>
-                            <span className="text-sm">Built over 30 client websites using modern JavaScript frameworks</span>
+                            <span className="text-sm">Designed responsive web interfaces with modern techniques</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-primary mr-2">•</span>
-                            <span className="text-sm">Reduced page load times by an average of 40% through optimization techniques</span>
+                            <span className="text-sm">Created visual elements and branding materials</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-primary mr-2">•</span>
-                            <span className="text-sm">Developed a custom CMS solution for small business clients</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                    
-                    {/* Job 3 */}
-                    <Card className="glass-effect relative overflow-hidden">
-                      <div className="absolute top-0 left-0 w-1 h-full bg-neon-purple"></div>
-                      <CardContent className="p-6">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <h3 className="text-xl font-bold">Junior Web Designer</h3>
-                          <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-neon-purple/10 text-neon-purple">
-                            2016 - 2018
-                          </span>
-                        </div>
-                        <p className="text-sm text-foreground/70 mb-4">Digital Solutions • New York, NY</p>
-                        <p className="text-foreground/80">
-                          Created wireframes, mockups, and interactive prototypes for web projects. Collaborated with developers to ensure design integrity throughout the development process.
-                        </p>
-                        <ul className="mt-4 space-y-2">
-                          <li className="flex items-start">
-                            <span className="text-neon-purple mr-2">•</span>
-                            <span className="text-sm">Designed UI/UX for 15+ client websites with high user satisfaction ratings</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-neon-purple mr-2">•</span>
-                            <span className="text-sm">Created a design system that improved team efficiency by 25%</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="text-neon-purple mr-2">•</span>
-                            <span className="text-sm">Received an award for most innovative design in a company competition</span>
+                            <span className="text-sm">Collaborated with developers to implement designs</span>
                           </li>
                         </ul>
                       </CardContent>
@@ -151,31 +119,14 @@ const Resume = () => {
                       <div className="absolute top-0 left-0 w-1 h-full bg-neon-pink"></div>
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <h3 className="text-xl font-bold">Master's in Computer Science</h3>
+                          <h3 className="text-xl font-bold">BTech in Computer Science (AI & ML)</h3>
                           <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-neon-pink/10 text-neon-pink">
-                            2014 - 2016
+                            2023 - 2027
                           </span>
                         </div>
-                        <p className="text-sm text-foreground/70 mb-4">Stanford University • Stanford, CA</p>
+                        <p className="text-sm text-foreground/70 mb-4">J.C. Bose University of Science and Technology, YMCA • Faridabad, Haryana</p>
                         <p className="text-foreground/80">
-                          Specialized in Human-Computer Interaction and Web Technologies. Graduated with honors.
-                        </p>
-                      </CardContent>
-                    </Card>
-                    
-                    {/* Education 2 */}
-                    <Card className="glass-effect relative overflow-hidden">
-                      <div className="absolute top-0 left-0 w-1 h-full bg-neon-blue"></div>
-                      <CardContent className="p-6">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                          <h3 className="text-xl font-bold">Bachelor's in Digital Media</h3>
-                          <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-neon-blue/10 text-neon-blue">
-                            2010 - 2014
-                          </span>
-                        </div>
-                        <p className="text-sm text-foreground/70 mb-4">University of California • Los Angeles, CA</p>
-                        <p className="text-foreground/80">
-                          Focused on web design, user experience, and interactive media. GPA: 3.85/4.0
+                          Specializing in Artificial Intelligence and Machine Learning. GPA: 9+
                         </p>
                       </CardContent>
                     </Card>
