@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -41,8 +41,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <a href="mailto:hello@example.com" className="text-foreground/70 hover:text-accent transition-colors">
-                        hello@example.com
+                      <a href="mailto:nandinishukla023@gmail.com" className="text-foreground/70 hover:text-accent transition-colors">
+                        nandinishukla023@gmail.com
                       </a>
                     </div>
                   </CardContent>
@@ -51,27 +51,13 @@ const Contact = () => {
                 <Card className="glass-effect animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   <CardContent className="p-6 flex items-start space-x-4">
                     <div className="mt-0.5">
-                      <Phone className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium mb-1">Phone</h3>
-                      <a href="tel:+1234567890" className="text-foreground/70 hover:text-primary transition-colors">
-                        +1 (234) 567-890
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <Card className="glass-effect animate-fade-in" style={{ animationDelay: "0.6s" }}>
-                  <CardContent className="p-6 flex items-start space-x-4">
-                    <div className="mt-0.5">
-                      <MapPin className="h-5 w-5 text-neon-purple" />
+                      <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Location</h3>
                       <p className="text-foreground/70">
-                        San Francisco, CA<br />
-                        United States
+                        Faridabad, Haryana<br />
+                        India
                       </p>
                     </div>
                   </CardContent>
@@ -146,15 +132,20 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Google Map or other location visualization could go here */}
+      {/* Thank you for visiting section */}
       <section className="py-8">
         <div className="container px-4 mx-auto">
           <div className="rounded-xl overflow-hidden h-[300px] w-full neon-border-blue animate-fade-in">
-            <img 
-              src="/placeholder.svg" 
-              alt="Map" 
-              className="w-full h-full object-cover"
-            />
+            <div className="relative w-full h-full overflow-hidden">
+              <img 
+                src="/placeholder.svg" 
+                alt="Thank you for visiting!" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <h2 className="text-3xl font-bold text-white neon-text-blue">Thank You For Visiting</h2>
+              </div>
+            </div>
           </div>
         </div>
       </section>
