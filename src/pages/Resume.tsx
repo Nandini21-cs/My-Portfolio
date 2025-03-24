@@ -1,3 +1,4 @@
+
 import React from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -103,6 +104,37 @@ const Resume = () => {
                         </ul>
                       </CardContent>
                     </Card>
+                    
+                    {/* New Job - Digital Marketing Internship */}
+                    <Card className="glass-effect relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1 h-full bg-neon-purple"></div>
+                      <CardContent className="p-6">
+                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                          <h3 className="text-xl font-bold">Digital Marketing Internship</h3>
+                          <span className="inline-flex items-center px-3 py-1 mt-2 md:mt-0 rounded-full text-xs font-medium bg-neon-purple/10 text-neon-purple">
+                            JAN 2025 - FEB 2025
+                          </span>
+                        </div>
+                        <p className="text-sm text-foreground/70 mb-4">GameInvasion Inc • Faridabad, Haryana</p>
+                        <p className="text-foreground/80">
+                          Assisted in digital marketing campaigns for gaming products and services.
+                        </p>
+                        <ul className="mt-4 space-y-2">
+                          <li className="flex items-start">
+                            <span className="text-neon-purple mr-2">•</span>
+                            <span className="text-sm">Helped create and manage social media content</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-neon-purple mr-2">•</span>
+                            <span className="text-sm">Assisted with SEO optimization strategies</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-neon-purple mr-2">•</span>
+                            <span className="text-sm">Supported email marketing campaigns</span>
+                          </li>
+                        </ul>
+                      </CardContent>
+                    </Card>
                   </div>
                 </div>
                 
@@ -187,7 +219,7 @@ const Resume = () => {
                   </Card>
                 </div>
                 
-                {/* Languages */}
+                {/* Languages - UPDATED */}
                 <div className="animate-slide-up" style={{ animationDelay: "0.5s" }}>
                   <div className="flex items-center gap-2 mb-6">
                     <Languages className="text-neon-blue" />
@@ -206,18 +238,10 @@ const Resume = () => {
                           </div>
                         </li>
                         <li className="flex justify-between items-center">
-                          <span>Spanish</span>
+                          <span>Hindi</span>
                           <div className="flex gap-1">
                             {[...Array(5)].map((_, i) => (
-                              <span key={i} className={`w-2 h-2 rounded-full ${i < 4 ? 'bg-accent' : 'bg-secondary/50'}`}></span>
-                            ))}
-                          </div>
-                        </li>
-                        <li className="flex justify-between items-center">
-                          <span>French</span>
-                          <div className="flex gap-1">
-                            {[...Array(5)].map((_, i) => (
-                              <span key={i} className={`w-2 h-2 rounded-full ${i < 3 ? 'bg-accent' : 'bg-secondary/50'}`}></span>
+                              <span key={i} className="w-2 h-2 rounded-full bg-accent"></span>
                             ))}
                           </div>
                         </li>
@@ -226,7 +250,7 @@ const Resume = () => {
                   </Card>
                 </div>
                 
-                {/* Certifications */}
+                {/* Certifications - UPDATED */}
                 <div className="animate-slide-up" style={{ animationDelay: "0.7s" }}>
                   <div className="flex items-center gap-2 mb-6">
                     <Award className="text-neon-pink" />
@@ -238,24 +262,24 @@ const Resume = () => {
                       <ul className="space-y-4">
                         <li className="space-y-1">
                           <div className="flex justify-between">
-                            <span className="font-medium">Google UX Design Professional</span>
-                            <span className="text-xs text-foreground/70">2022</span>
+                            <span className="font-medium">Career Essentials in Generative AI</span>
+                            <span className="text-xs text-foreground/70">2023</span>
                           </div>
-                          <p className="text-sm text-foreground/70">Google</p>
-                        </li>
-                        <li className="space-y-1">
-                          <div className="flex justify-between">
-                            <span className="font-medium">AWS Certified Developer</span>
-                            <span className="text-xs text-foreground/70">2021</span>
-                          </div>
-                          <p className="text-sm text-foreground/70">Amazon Web Services</p>
+                          <p className="text-sm text-foreground/70">Microsoft and LinkedIn</p>
                         </li>
                         <li className="space-y-1">
                           <div className="flex justify-between">
                             <span className="font-medium">Meta Front-End Developer</span>
-                            <span className="text-xs text-foreground/70">2020</span>
+                            <span className="text-xs text-foreground/70">2024</span>
                           </div>
                           <p className="text-sm text-foreground/70">Meta</p>
+                        </li>
+                        <li className="space-y-1">
+                          <div className="flex justify-between">
+                            <span className="font-medium">Database Certificate</span>
+                            <span className="text-xs text-foreground/70">2025</span>
+                          </div>
+                          <p className="text-sm text-foreground/70">Oracle</p>
                         </li>
                       </ul>
                     </CardContent>
