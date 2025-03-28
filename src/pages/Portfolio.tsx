@@ -62,7 +62,7 @@ const Portfolio = () => {
                 </div>
                 <div className="absolute -right-6 top-2/3 glass-effect px-4 py-2 rounded-full animate-float" style={{ animationDelay: "1s" }}>
                   <span className="text-primary font-medium flex items-center gap-2">
-                    <LayoutIcon size={16} /> UI/UX Design
+                    <Users size={16} /> Digital Marketing
                   </span>
                 </div>
               </div>
